@@ -16,3 +16,9 @@ exports.update = (req, res)=>{
     tasks[id] = task
     res.send(`these are pending tasks: ${tasks}`)
 }
+
+exports.delete = (req, res)=>{
+    var {id} = req.params
+    tasks.splice(id, 1)
+    res.send(`these are pending tasks: ${tasks}`)
+}
