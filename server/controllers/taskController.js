@@ -6,3 +6,7 @@ exports.create = (req, res)=>{
     res.send(`these are pending tasks: ${tasks}`)
     console.log(tasks)
 }
+
+exports.read = (req, res)=>{
+    res.send(`these are the pending tasks: ${tasks}`)
+}
