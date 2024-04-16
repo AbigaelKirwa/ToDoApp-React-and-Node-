@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+       "target": "ES2022",
+       "module": "ES2022",
+       "esModuleInterop": true,
+       "forceConsistentCasingInFileNames": true,
+       "strict": true,
+       "lib": ["ES2022", "dom", "esnext"],
+       "jsx": "preserve",
+       "moduleResolution": "node",
+       "allowSyntheticDefaultImports": true
+    },
+    "include": [
+     "src/**/*",
+     "/src/types.d.ts"
+    ]
+}
+   
+  
