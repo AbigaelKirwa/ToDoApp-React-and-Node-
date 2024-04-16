@@ -5,9 +5,10 @@ var tasks = [
 ]
 
 exports.create = (req, res)=>{
-    var task = req.body.name
-    tasks.push(task)
+    var {id, title, priority, createdAt, done, doneAt} = req.body
+    tasks.push({id, title, priority, createdAt, done, doneAt})
     res.send(tasks)
+    console.log(`added to tasks: ${JSON.stringify(tasks)}`)
 }
 
 exports.read = (req, res)=>{
