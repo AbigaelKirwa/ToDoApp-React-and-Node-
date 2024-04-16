@@ -5,7 +5,7 @@ import Heading from './components/Heading';
 import BoxCover from './components/BoxCover';
 
 function App() {
-  const API_URL = "http://localhost:3500/"
+  const API_URL = "http://localhost:3500"
   return (
     <div className="App">
       <BoxCover>

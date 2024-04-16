@@ -22,7 +22,16 @@ exports.update = (req, res)=>{
 }
 
 exports.delete = (req, res)=>{
+    // var {id} = req.params
+    // tasks.splice(id-1, 1)
+    // console.log(`deleted ${JSON.stringify(tasks)}`)
+    // res.send(tasks)
+
     var {id} = req.params
-    tasks.splice(id, 1)
+    var index = tasks.findIndex((task)=>parseInt(task.id) === parseInt(id))
+    if (index !== -1){
+        console.log(`Deleting Task${JSON.stringify(tasks[index])}`)
+        tasks.splice(index, 1)
+    }
     res.send(tasks)
 }
